@@ -31,18 +31,18 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument({
-      name: 'apm demo app devtools',
+      name: 'APM Demo App DevTools',
       maxAge: 25,
-      logOnly: environment.production,
-    }),
+      logOnly: environment.production
+    })
   ],
   declarations: [
     AppComponent,
     ShellComponent,
     MenuComponent,
     WelcomeComponent,
-    PageNotFoundComponent,
+    PageNotFoundComponent
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
